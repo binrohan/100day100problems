@@ -13,10 +13,12 @@ def colantz(n,count=1):
             n= (3*n) +1
     return count
 
+
 for i in range(1000000):
     ipo = colantz(i)
     if ipo > max[0]:
         max[0] = ipo
         max[1] = i
+
 
 print max

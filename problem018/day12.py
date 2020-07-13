@@ -1,6 +1,5 @@
 import time
 
-
 start = time.time()
 
 number = '''
@@ -20,17 +19,13 @@ number = '''
 63 66 04 68 89 53 67 30 73 16 69 87 40 31
 04 62 98 27 23 09 70 98 73 93 38 53 60 04 23'''
 
-
 number = number.strip().split('\n')
-
 
 for i in xrange(1,len(number)):
 	number[i] = number[i].strip().split(' ')
 	number[i] = [int(x) for x in number[i]]
 
-
 number[0] = [75]
-
 
 counter = 0
 
@@ -40,11 +35,8 @@ for i in xrange(len(number)-2,-1,-1):
 		counter += 1
 	number.pop()
 
-
 print 'Found {} in {} iterations'.format(number[0][0],counter)
 
-
 end = time.time()
-
 
 print end-start

@@ -5,5 +5,4 @@ def TotalPathInGrid(r, c):
 
 result = TotalPathInGrid(20, 20)
 
-
 print result

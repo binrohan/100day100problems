@@ -6,6 +6,7 @@ def f(L, n=42000):
 		c = d[i-1] * d[i//2] if i % 2 == 0 else d[(i-1)//2] * d[i]
 		if c > L: return c, i*(i-1)//2
 
+
 L = 500
 Dt, t = f(L)
 print "is", t, "(", Dt, "divisors)"

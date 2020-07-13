@@ -6,6 +6,8 @@ def numberLetterCount(num):
         if l.isalpha():
             sum += 1
     return sum
+
+    
 sum = 0
 for i in xrange(1, 1001, 1):
     sum = sum + numberLetterCount(i)

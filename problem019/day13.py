@@ -1,7 +1,5 @@
 from datetime import date
 
-
-
 sunday = 6
 
 start = date(1901, 1, 1)
@@ -11,7 +9,7 @@ count = 0
 year = start.year
 month = start.month
 
-while year < end.year and month < end.month:
+while year <= end.year and month <= end.month:
     test = date(year, month, 1)
     if test.weekday() == sunday:
         count += 1
@@ -20,5 +18,6 @@ while year < end.year and month < end.month:
         year += 1
     else:
         month += 1
+
 
 print count

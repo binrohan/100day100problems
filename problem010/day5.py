@@ -1,4 +1,5 @@
 import math
+
 def isPrime(num):
     for x in xrange(2, int(round(math.sqrt(num))) + 1, 1):
         if num%x == 0:
